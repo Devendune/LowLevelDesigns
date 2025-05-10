@@ -14,13 +14,12 @@ public class Stock
         NotificationAlertObserver emailObserver =new EmailObserverImpl("devendunegi06@gmail.com",iphoneStockObservable);
         NotificationAlertObserver emailObserverSecond =new EmailObserverImpl("devendunegi07@gmail.com",iphoneStockObservable);
         NotificationAlertObserver emailObserverThird =new EmailObserverImpl("devendunegi08@gmail.com",iphoneStockObservable);
-
         iphoneStockObservable.add(emailObserver);
         iphoneStockObservable.add(emailObserverSecond);
         iphoneStockObservable.add(emailObserverThird);
 
         iphoneStockObservable.setStockCount(100);
-
+        System.out.println("hi there");
 
 
     }
