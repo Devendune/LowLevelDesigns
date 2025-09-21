@@ -2,22 +2,8 @@ package org.TicTacToe;
 
 public class Player
 {
-    public String name;
-    PieceType pieceType;
-
-    public Player(String name,PieceType pieceType)
-    {
-        this.name=name;
-        this.pieceType=pieceType;
-    }
-
-    public PieceType getPieceType() {
-        return pieceType;
-    }
-
-    public void setPieceType(PieceType pieceType) {
-        this.pieceType = pieceType;
-    }
+    String name;
+    PlayingPiece playingPiece;
 
     public String getName() {
         return name;
@@ -25,5 +11,13 @@ public class Player
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public PlayingPiece getPlayingPiece() {
+        return playingPiece;
+    }
+
+    public void setPlayingPiece(PlayingPiece playingPiece) {
+        this.playingPiece = playingPiece;
     }
 }

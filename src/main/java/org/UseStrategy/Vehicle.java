@@ -1,18 +1,17 @@
 package org.UseStrategy;
 import org.UseStrategy.Strategy.DriveStrategy;
 
-public class Vehicle implements DriveStrategy
+public class Vehicle
 {
-    DriveStrategy driveObj;
+    DriveStrategy driveStrategy;
 
-    Vehicle(DriveStrategy driveObj)
+    public Vehicle(DriveStrategy driveStrategy)
     {
-        this.driveObj=driveObj;
+        this.driveStrategy=driveStrategy;
     }
 
-    @Override
     public void drive()
     {
-        driveObj.drive();
+        driveStrategy.drive();
     }
 }

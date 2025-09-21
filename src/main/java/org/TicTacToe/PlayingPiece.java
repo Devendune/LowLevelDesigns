@@ -2,9 +2,11 @@ package org.TicTacToe;
 
 public class PlayingPiece
 {
-    PieceType pieceType;
+    public PieceType pieceType;
+
     public PlayingPiece(PieceType pieceType)
     {
-        this.pieceType= pieceType;
+        this.pieceType=pieceType;
     }
+
 }

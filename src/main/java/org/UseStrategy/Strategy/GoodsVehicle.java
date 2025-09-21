@@ -1,7 +1,6 @@
-package org.UseStrategy;
+package org.UseStrategy.Strategy;
 
-import org.UseStrategy.Strategy.GoodsVehicleStrategy;
-import org.example.SportsVehicle;
+import org.UseStrategy.Vehicle;
 
 public class GoodsVehicle extends Vehicle
 {
@@ -9,5 +8,4 @@ public class GoodsVehicle extends Vehicle
     {
         super(new GoodsVehicleStrategy());
     }
-
 }
